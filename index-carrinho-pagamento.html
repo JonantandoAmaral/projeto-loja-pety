@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrinho - PetShop</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./react-bootstrap/assets/css/style_tela_inicial.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <script src="./react-bootstrap/assets/js/carrinho.js"></script>
+
+  </head>
+  <body>
+    <header class="logo-texto">
+      <h1>PetShop</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./index-produtos.html">Produtos e Serviços</a></li>
+        <li>
+          <a href="./index-carrinho-pagamento.html">Carrinho e Pagamentos</a>
+        </li>
+        <li><a href="./index-quem-somos.html">Quem Somos</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h2><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
+
+      <ul id="lista-carrinho" class="list-group mb-3"></ul>
+
+      <p>
+        <strong>Total: R$ <span id="total-carrinho">0.00</span></strong>
+      </p>
+
+      <div class="botoes-carrinho">
+        <button onclick="limparCarrinho()" class="btn-pet">
+          Esvaziar Carrinho
+        </button>
+        <a href="index-produtos.html" class="btn-pet">Continuar Comprando</a>
+        <button onclick="finalizarPedido()" class="btn-pet">
+          Finalizar Pedido
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

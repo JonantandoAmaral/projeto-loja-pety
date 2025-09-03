@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Produtos - PetShop</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./react-bootstrap/assets/css/style_tela_inicial.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <script src="./react-bootstrap/assets/js/carrinho.js"></script>
+  </head>
+  <body>
+     <header class="logo-texto"><h1>PetShop</h1>
+    <span id="carrinho-badge" style="display:none;position:relative;left:10px;background:#ff6b6b;color:#fff;padding:4px 8px;border-radius:12px;font-size:14px;"></span>
+  </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./index-produtos.html">Produtos e Serviços</a></li>
+        <li><a href="./index-carrinho-pagamento.html">Carrinho e Pagamentos</a></li>
+        <li><a href="./index-quem-somos.html">Quem Somos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+    <h2><i class="fas fa-bone"></i> Nossos Produtos</h2>
+    <div class="produtos-grid">
+      <article class="produto-card">
+        <img src="react-bootstrap/assets/img/racao.jpg" alt="Ração para Cães" class="img-fluid"/>
+        <h3>Ração Premium para Cães</h3>
+        <p>Nutrição completa e sabor irresistível.</p>
+        <button class="btn-pet" onclick="adicionarAoCarrinho('Ração Premium para Cães', 89.90, 'react-bootstrap/assets/img/racao.jpg')">Comprar — R$ 89,90</button>
+      </article>
+
+      <article class="produto-card">
+        <img src="react-bootstrap/assets/img/brinquedo.jpg" alt="Brinquedo para Gatos" class="img-fluid"/>
+        <h3>Brinquedo Interativo para Gatos</h3>
+        <p>Diversão garantida para seu felino.</p>
+        <button class="btn-pet" onclick="adicionarAoCarrinho('Brinquedo Interativo para Gatos', 29.90, 'react-bootstrap/assets/img/brinquedo.jpg')">Comprar — R$ 29,90</button>
+      </article>
+
+      <article class="produto-card">
+        <img src="react-bootstrap/assets/img/cama.jpg" alt="Cama para Pets" class="img-fluid"/>
+        <h3>Cama Confortável para Pets</h3>
+        <p>O descanso perfeito para seu amigo.</p>
+        <button class="btn-pet" onclick="adicionarAoCarrinho('Cama Confortável para Pets', 159.90, 'react-bootstrap/assets/img/cama.jpg')">Comprar — R$ 159,90</button>
+      </article>
+
+      <article class="produto-card">
+        <img src="react-bootstrap/assets/img/shampoo.jpg" alt="Shampoo para Pets" class="img-fluid"/>
+        <h3>Shampoo para Pets</h3>
+        <p>Cuidados completos para deixar seu pet limpo.</p>
+        <button class="btn-pet" onclick="adicionarAoCarrinho('Shampoo para Pets', 34.90, 'react-bootstrap/assets/img/shampoo.jpg')">Comprar — R$ 34,90</button>
+      </article>
+
+      <article class="produto-card">
+        <img src="react-bootstrap/assets/img/vet.jpg" alt="Consultas Veterinárias" class="img-fluid"/>
+        <h3>Consultas Veterinárias</h3>
+        <p>Atendimento com profissionais qualificados.</p>
+        <button class="btn-pet" onclick="adicionarAoCarrinho('Consulta Veterinária', 120.00, 'react-bootstrap/assets/img/vet.jpg')">Agendar — R$ 120,00</button>
+      </article>
+
+      <article class="produto-card">
+        <img src="react-bootstrap/assets/img/adestramento.jpg" alt="Adestramento" class="img-fluid"/>
+        <h3>Adestramento</h3>
+        <p>Técnicas para o bom comportamento do seu animal.</p>
+        <button class="btn-pet" onclick="adicionarAoCarrinho('Sessão de Adestramento', 199.00, 'react-bootstrap/assets/img/adestramento.jpg')">Comprar — R$ 199,00</button>
+      </article>
+
+      <article class="produto-card">
+        <img src="react-bootstrap/assets/img/hospedagem.jpg" alt="Hospedagem" class="img-fluid"/>
+        <h3>Hospedagem</h3>
+        <p>Conforto e segurança para seu pet.</p>
+        <button class="btn-pet" onclick="adicionarAoCarrinho('Hospedagem por noite', 89.00, 'react-bootstrap/assets/img/hospedagem.jpg')">Reservar — R$ 89,00</button>
+      </article>
+    </div>
+
+    <div class="text-center">
+      <a href="https://www.instagram.com/lojadepetzcachorrofeliz/" target="_blank" class="btn-pet"><i class="fab fa-instagram"></i> Siga-nos</a>
+    </div>
+  </main>
+
+  <script src="./react-bootstrap/assets/js/carrinho.js"></script>
+</body>
+</html>
